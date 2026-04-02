@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy - Leyano Construction (PTY) LTD">
+  <title>Privacy Policy | Leyano Construction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-dark: #101010;
+      --primary: #c5162e;
+      --gray-light: #f4f5f7;
+      --text-dark: #141414;
+      --text-muted: #4f555f;
+      --shadow-sm: 0 10px 22px -8px rgba(0, 0, 0, 0.18);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--text-dark);
+      background: linear-gradient(180deg, #fff 0%, #f8f9fb 100%);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(100% - 2rem, 1100px);
+      margin: 0 auto;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 3px solid var(--primary);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .topbar {
+      padding: 0.85rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo img {
+      width: clamp(160px, 20vw, 235px);
+      display: block;
+      height: auto;
+    }
+
+    .back-home {
+      color: var(--primary-dark);
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid #d3d7df;
+      padding: 0.5rem 0.85rem;
+      border-radius: 8px;
+    }
+
+    .back-home:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    main {
+      padding: 2.2rem 0 3rem;
+    }
+
+    .policy-card {
+      background: #fff;
+      border: 1px solid #e3e6ec;
+      border-left: 5px solid var(--primary);
+      border-radius: 14px;
+      box-shadow: var(--shadow-sm);
+      padding: clamp(1rem, 2.8vw, 2rem);
+    }
+
+    h1 {
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.45rem;
+      font-size: clamp(1.5rem, 3.5vw, 2.3rem);
+    }
+
+    .updated {
+      color: var(--text-muted);
+      margin-bottom: 1.2rem;
+      font-size: 0.92rem;
+    }
+
+    h2 {
+      margin-top: 1.25rem;
+      margin-bottom: 0.35rem;
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      font-size: 1.1rem;
+      color: #1b1f27;
+    }
+
+    p, li {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    ul { margin: 0.45rem 0 0.6rem 1.1rem; }
+
+    footer {
+      background: var(--primary-dark);
+      border-top: 4px solid var(--primary);
+      color: #d1d5db;
+      padding: 1.2rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <a class="logo" href="index.html" aria-label="Leyano Construction home">
+        <img src="assets/leyano-logo.png" alt="Leyano Construction logo">
+      </a>
+      <a class="back-home" href="index.html">Back to Home</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <article class="policy-card">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: 2026-03-26</p>
+
+        <p>Leyano Construction (PTY) LTD respects your privacy and is committed to protecting your personal information when you use this website.</p>
+
+        <h2>Information We Collect</h2>
+        <ul>
+          <li>Contact details you provide (name, email, phone, message).</li>
+          <li>Basic usage information required to run and improve this website.</li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <ul>
+          <li>To respond to consultation and quotation requests.</li>
+          <li>To communicate project-related information.</li>
+          <li>To improve our service quality and client experience.</li>
+        </ul>
+
+        <h2>Information Sharing</h2>
+        <p>We do not sell your personal information. Your details may only be shared when necessary to deliver services or comply with legal obligations.</p>
+
+        <h2>Data Security</h2>
+        <p>We take practical and reasonable measures to protect personal information against unauthorized access, misuse, or disclosure.</p>
+
+        <h2>Your Rights</h2>
+        <p>You may request access to, correction of, or deletion of your personal information by contacting Leyano Construction directly.</p>
+
+        <h2>Contact</h2>
+        <p>For privacy-related questions, contact: <a href="mailto:info@leyanoconstruction.co.za">info@leyanoconstruction.co.za</a></p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; <span id="year"></span> Leyano Construction (PTY) LTD. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

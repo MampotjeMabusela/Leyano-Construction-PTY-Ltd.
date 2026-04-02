@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Terms and Conditions - Leyano Construction (PTY) LTD">
+  <title>Terms & Conditions | Leyano Construction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-dark: #101010;
+      --primary: #c5162e;
+      --gray-light: #f4f5f7;
+      --text-dark: #141414;
+      --text-muted: #4f555f;
+      --shadow-sm: 0 10px 22px -8px rgba(0, 0, 0, 0.18);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--text-dark);
+      background: linear-gradient(180deg, #fff 0%, #f8f9fb 100%);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(100% - 2rem, 1100px);
+      margin: 0 auto;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 3px solid var(--primary);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .topbar {
+      padding: 0.85rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo img {
+      width: clamp(160px, 20vw, 235px);
+      display: block;
+      height: auto;
+    }
+
+    .back-home {
+      color: var(--primary-dark);
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid #d3d7df;
+      padding: 0.5rem 0.85rem;
+      border-radius: 8px;
+    }
+
+    .back-home:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    main {
+      padding: 2.2rem 0 3rem;
+    }
+
+    .terms-card {
+      background: #fff;
+      border: 1px solid #e3e6ec;
+      border-left: 5px solid var(--primary);
+      border-radius: 14px;
+      box-shadow: var(--shadow-sm);
+      padding: clamp(1rem, 2.8vw, 2rem);
+    }
+
+    h1 {
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.45rem;
+      font-size: clamp(1.5rem, 3.5vw, 2.3rem);
+    }
+
+    .updated {
+      color: var(--text-muted);
+      margin-bottom: 1.2rem;
+      font-size: 0.92rem;
+    }
+
+    h2 {
+      margin-top: 1.25rem;
+      margin-bottom: 0.35rem;
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      font-size: 1.1rem;
+      color: #1b1f27;
+    }
+
+    p, li {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    ul { margin: 0.45rem 0 0.6rem 1.1rem; }
+
+    footer {
+      background: var(--primary-dark);
+      border-top: 4px solid var(--primary);
+      color: #d1d5db;
+      padding: 1.2rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <a class="logo" href="index.html" aria-label="Leyano Construction home">
+        <img src="assets/leyano-logo.png" alt="Leyano Construction logo">
+      </a>
+      <a class="back-home" href="index.html">Back to Home</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <article class="terms-card">
+        <h1>Terms & Conditions</h1>
+        <p class="updated">Last updated: 2026-03-26</p>
+
+        <p>These Terms & Conditions govern the use of the Leyano Construction (PTY) LTD website and related services.</p>
+
+        <h2>Use of Website</h2>
+        <p>This website is provided for informational and business communication purposes. You agree to use the website lawfully and responsibly.</p>
+
+        <h2>Service Information</h2>
+        <p>Project descriptions, timelines, and examples are provided in good faith and may vary based on scope, site conditions, and client requirements.</p>
+
+        <h2>Quotes and Agreements</h2>
+        <p>Any quotation, timeline, or proposal shared through consultations is subject to formal written agreement and final project terms.</p>
+
+        <h2>Intellectual Property</h2>
+        <p>Website content, visuals, and branding are owned by or licensed to Leyano Construction and may not be reused without permission.</p>
+
+        <h2>Liability</h2>
+        <p>Leyano Construction is not liable for indirect loss arising from use of this website. We strive to keep all information accurate and up to date.</p>
+
+        <h2>Changes to Terms</h2>
+        <p>These terms may be updated from time to time. Continued use of the website implies acceptance of any updated terms.</p>
+
+        <h2>Contact</h2>
+        <p>For terms-related queries, contact: <a href="mailto:info@leyanoconstruction.co.za">info@leyanoconstruction.co.za</a></p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; <span id="year"></span> Leyano Construction (PTY) LTD. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

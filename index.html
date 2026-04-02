@@ -689,6 +689,27 @@
       font-size: 0.9rem;
     }
 
+    .legal-links {
+      margin-top: 0.7rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .legal-links a {
+      color: #f3f4f6;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .legal-links a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
     /* Responsive */
     @media (max-width: 1200px) {
       .nav-links {
@@ -1206,6 +1227,10 @@
       </div>
       <div class="copyright">
         <p>&copy; <span id="currentYear"></span> Leyano Construction (PTY) LTD. All rights reserved. | Reg No: 2018/123456/07</p>
+        <div class="legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+        </div>
       </div>
     </div>
   </footer>
