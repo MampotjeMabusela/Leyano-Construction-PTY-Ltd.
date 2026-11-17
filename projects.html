@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Explore Leyano Construction project portfolio — residential builds, interiors, and in-progress sites across South Africa.">
+  <title>Projects | Leyano Construction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/festive.css">
+</head>
+<body>
+  <header>
+    <div class="nav-bar">
+      <a class="logo" href="index.html" aria-label="Leyano Construction home">
+        <img src="assets/leyano-logo.png" alt="Leyano Construction logo">
+      </a>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-controls="nav-links" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-eyebrow">PORTFOLIO</span>
+        <h1>Our Projects</h1>
+        <p>A selection of completed and in-progress work — from residential builds to interiors — delivered with Leyano quality and site discipline.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="page-section">
+      <div class="container">
+        <div class="project-filters" aria-label="Project categories">
+          <button class="filter-btn active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="residential">Residential</button>
+          <button class="filter-btn" type="button" data-filter="interiors">Interiors</button>
+          <button class="filter-btn" type="button" data-filter="in-progress">In Progress</button>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card featured" data-category="residential">
+            <img src="assets/project-01.png" alt="Modern single-storey home with landscaped lawn" loading="lazy" decoding="async">
+            <div class="project-content">
+              <span class="project-tag">Residential Build</span>
+              <h3>Modern Family Residence</h3>
+              <p>Contemporary single-level home with clean lines, feature stonework, and premium finishes.</p>
+            </div>
+          </div>
+          <div class="project-card featured" data-category="residential">
+            <img src="assets/project-02.png" alt="Newly completed house with tiled driveway and garage" loading="lazy" decoding="async">
+            <div class="project-content">
+              <span class="project-tag">Turnkey Project</span>
+              <h3>Completed Home Delivery</h3>
+              <p>End-to-end project delivery from groundworks to final handover in a modern neighborhood.</p>
+            </div>
+          </div>
+          <div class="project-card featured" data-category="in-progress">
+            <img src="assets/project-03.png" alt="Construction team building foundation walls on site" loading="lazy" decoding="async">
+            <div class="project-content">
+              <span class="project-tag">Groundworks</span>
+              <h3>Foundation & Masonry Stage</h3>
+              <p>Site preparation, layout setting, and blockwork completed with strict quality supervision.</p>
+            </div>
+          </div>
+          <div class="project-card featured" data-category="in-progress">
+            <img src="assets/project-04.png" alt="Roof truss installation on unfinished house" loading="lazy" decoding="async">
+            <div class="project-content">
+              <span class="project-tag">Roofing</span>
+              <h3>Structural Roof Framing</h3>
+              <p>Accurate roof truss installation and structural alignment for long-term durability.</p>
+            </div>
+          </div>
+          <div class="project-card" data-category="residential">
+            <img src="assets/project-05.png" alt="Luxury two-storey house exterior with pool" loading="lazy" decoding="async">
+            <div class="project-content">
+              <span class="project-tag">Luxury Home</span>
+              <h3>Premium Double-Storey Home</h3>
+              <p>Architectural build with expansive glazing, feature cladding, and elegant outdoor living.</p>
+            </div>
+          </div>
+          <div class="project-card" data-category="residential">
+            <img src="assets/project-06.png" alt="Modern multi-level home with strong geometric facade" loading="lazy" decoding="async">
+            <div class="project-content">
+              <span class="project-tag">Design + Build</span>
+              <h3>Contemporary Streetfront Residence</h3>
+              <p>Bold facade treatment and custom detailing tailored to the client’s modern brief.</p>
+            </div>
+          </div>
+          <div class="project-card" data-category="residential">
+            <img src="assets/project-07.png" alt="Modern home illuminated in evening with pool" loading="lazy" decoding="async">
+            <div class="project-content">
+              <span class="project-tag">Final Finishes</span>
+              <h3>Completed Evening Showcase</h3>
+              <p>Final stage project featuring refined lighting, glazing systems, and polished finishes.</p>
+            </div>
+          </div>
+          <div class="project-card" data-category="in-progress">
+            <img src="assets/project-08.png" alt="Workers installing slabs on an upper level floor" loading="lazy" decoding="async">
+            <div class="project-content">
+              <span class="project-tag">Structural Works</span>
+              <h3>Upper-Level Slab Installation</h3>
+              <p>Precision slab placement and reinforcement to maintain structural integrity.</p>
+            </div>
+          </div>
+          <div class="project-card" data-category="in-progress">
+            <img src="assets/project-09.png" alt="Construction workers laying floor slabs on a building" loading="lazy" decoding="async">
+            <div class="project-content">
+              <span class="project-tag">On-Site Teamwork</span>
+              <h3>Multi-Trade Construction Stage</h3>
+              <p>Collaborative site execution with disciplined safety and schedule management.</p>
+            </div>
+          </div>
+          <div class="project-card" data-category="in-progress">
+            <img src="assets/project-10.png" alt="Large house under construction with scaffolding" loading="lazy" decoding="async">
+            <div class="project-content">
+              <span class="project-tag">Build Progress</span>
+              <h3>Facade & Scaffolding Phase</h3>
+              <p>Ongoing structural and facade works delivered with attention to detail and workmanship.</p>
+            </div>
+          </div>
+          <div class="project-card" data-category="in-progress">
+            <img src="assets/project-11.png" alt="Modern house with construction truck in driveway" loading="lazy" decoding="async">
+            <div class="project-content">
+              <span class="project-tag">Site Logistics</span>
+              <h3>Material Delivery Coordination</h3>
+              <p>Efficient logistics planning to keep project phases moving without delays.</p>
+            </div>
+          </div>
+          <div class="project-card" data-category="interiors">
+            <img src="assets/project-12.png" alt="Completed bathroom with bathtub, vanity, and tiled walls" loading="lazy" decoding="async">
+            <div class="project-content">
+              <span class="project-tag">Interior Fit-Out</span>
+              <h3>Bathroom Finishing Works</h3>
+              <p>High-quality interior finishing with modern fixtures, tiling, and clean detailing.</p>
+            </div>
+          </div>
+          <div class="project-card" data-category="interiors">
+            <img src="assets/project-13.png" alt="Installed modern kitchen cabinetry and appliances" loading="lazy" decoding="async">
+            <div class="project-content">
+              <span class="project-tag">Interior Joinery</span>
+              <h3>Custom Kitchen Installation</h3>
+              <p>Functional and stylish kitchen setup with fitted cabinetry, appliances, and lighting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="projectLightbox" aria-hidden="true">
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button>
+        <img id="lightboxImage" src="" alt="">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="assets/leyano-logo.png" alt="Leyano Construction logo">
+          <p class="footer-tagline">Building a stronger tomorrow.</p>
+        </div>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@leyanoprojects0?_r=1&_t=ZS-950Tqzl3Lnc" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; <span id="currentYear"></span> Leyano Construction (PTY) LTD. All rights reserved. | Reg No: 2018/123456/07</p>
+        <div class="legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+        </div>
+        <p class="developer-credit">This website was developed by Mampotje Mabusela</p>
+      </div>
+    </div>
+  </footer>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/27729385674?text=I%20would%20like%20to%20consult%20Thato."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with Leyano Construction on WhatsApp"
+  >
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <script src="assets/site.js" defer></script>
+  <script src="assets/projects.js" defer></script>
+  <script src="assets/festive.js" defer></script>
+</body>
+</html>
