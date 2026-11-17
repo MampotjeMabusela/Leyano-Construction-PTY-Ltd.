@@ -1,0 +1,253 @@
+/* Leyano festive overlay — Christmas & New Year */
+.festive-layer {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  overflow: hidden;
+}
+
+.festive-layer * {
+  pointer-events: none;
+}
+
+#festive-sky {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.festive-garland {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  z-index: 2;
+  background:
+    radial-gradient(circle at 8% 18px, #ffd76a 0 5px, transparent 6px),
+    radial-gradient(circle at 16% 28px, #ff4d6d 0 5px, transparent 6px),
+    radial-gradient(circle at 24% 16px, #5eead4 0 5px, transparent 6px),
+    radial-gradient(circle at 32% 30px, #fbbf24 0 5px, transparent 6px),
+    radial-gradient(circle at 40% 18px, #fb7185 0 5px, transparent 6px),
+    radial-gradient(circle at 48% 28px, #86efac 0 5px, transparent 6px),
+    radial-gradient(circle at 56% 16px, #fde047 0 5px, transparent 6px),
+    radial-gradient(circle at 64% 30px, #f472b6 0 5px, transparent 6px),
+    radial-gradient(circle at 72% 18px, #67e8f9 0 5px, transparent 6px),
+    radial-gradient(circle at 80% 28px, #fdba74 0 5px, transparent 6px),
+    radial-gradient(circle at 88% 16px, #c084fc 0 5px, transparent 6px),
+    radial-gradient(circle at 96% 30px, #f87171 0 5px, transparent 6px);
+  filter: drop-shadow(0 0 6px rgba(255, 215, 120, 0.55));
+  opacity: 0.95;
+  mask-image: linear-gradient(180deg, #000 35%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, #000 35%, transparent 100%);
+  animation: festive-garland-glow 2.8s ease-in-out infinite alternate;
+}
+
+.festive-garland::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #1a4d2e 8%, #14532d 50%, #1a4d2e 92%, transparent);
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.festive-banner {
+  position: absolute;
+  top: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 1rem 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(16, 16, 16, 0.88), rgba(197, 22, 46, 0.82));
+  border: 1px solid rgba(255, 215, 128, 0.45);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.28),
+    0 0 24px rgba(255, 200, 80, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  color: #fff8e7;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(0.72rem, 1.8vw, 0.92rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  pointer-events: auto;
+  animation: festive-banner-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.festive-banner .festive-banner-icon {
+  font-size: 1rem;
+  filter: drop-shadow(0 0 6px rgba(255, 215, 100, 0.8));
+}
+
+.festive-banner button {
+  pointer-events: auto;
+  appearance: none;
+  border: 0;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  width: 1.45rem;
+  height: 1.45rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.85rem;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.festive-banner button:hover {
+  background: rgba(255, 255, 255, 0.28);
+  transform: scale(1.06);
+}
+
+.festive-tree {
+  position: absolute;
+  bottom: -8px;
+  width: min(168px, 28vw);
+  z-index: 2;
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.28));
+  transform-origin: 50% 100%;
+  animation: festive-tree-sway 5.5s ease-in-out infinite;
+}
+
+.festive-tree--left {
+  left: max(4px, env(safe-area-inset-left));
+}
+
+.festive-tree--right {
+  right: max(4px, env(safe-area-inset-right));
+  animation-delay: -2.4s;
+}
+
+.festive-tree svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.festive-tree .ornament {
+  animation: festive-twinkle 1.8s ease-in-out infinite;
+}
+
+.festive-tree .ornament:nth-child(odd) {
+  animation-delay: 0.4s;
+}
+
+.festive-tree .ornament:nth-child(3n) {
+  animation-delay: 0.9s;
+}
+
+.festive-tree .star {
+  transform-origin: center;
+  animation: festive-star-pulse 2.2s ease-in-out infinite;
+}
+
+.festive-tree .light {
+  animation: festive-bulb 1.4s ease-in-out infinite;
+}
+
+.festive-tree .light:nth-of-type(2n) {
+  animation-delay: 0.35s;
+}
+
+.festive-tree .light:nth-of-type(3n) {
+  animation-delay: 0.7s;
+}
+
+.festive-snow-mound {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  background:
+    radial-gradient(ellipse 40% 100% at 12% 100%, rgba(255, 255, 255, 0.92) 0 55%, transparent 56%),
+    radial-gradient(ellipse 35% 100% at 50% 100%, rgba(255, 255, 255, 0.88) 0 50%, transparent 51%),
+    radial-gradient(ellipse 42% 100% at 88% 100%, rgba(255, 255, 255, 0.9) 0 55%, transparent 56%);
+  opacity: 0.55;
+  z-index: 1;
+  filter: blur(0.2px);
+}
+
+@keyframes festive-garland-glow {
+  from { filter: drop-shadow(0 0 4px rgba(255, 215, 120, 0.35)); opacity: 0.85; }
+  to { filter: drop-shadow(0 0 10px rgba(255, 215, 120, 0.75)); opacity: 1; }
+}
+
+@keyframes festive-banner-in {
+  from { opacity: 0; transform: translate(-50%, -18px) scale(0.96); }
+  to { opacity: 1; transform: translate(-50%, 0) scale(1); }
+}
+
+@keyframes festive-tree-sway {
+  0%, 100% { transform: rotate(-1.2deg); }
+  50% { transform: rotate(1.4deg); }
+}
+
+@keyframes festive-twinkle {
+  0%, 100% { opacity: 0.75; filter: brightness(0.95); }
+  50% { opacity: 1; filter: brightness(1.35); }
+}
+
+@keyframes festive-star-pulse {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px #ffe08a); }
+  50% { transform: scale(1.12); filter: drop-shadow(0 0 12px #ffd24a); }
+}
+
+@keyframes festive-bulb {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+
+@media (max-width: 720px) {
+  .festive-tree {
+    width: min(118px, 34vw);
+  }
+
+  .festive-banner {
+    top: 58px;
+    max-width: calc(100vw - 1.5rem);
+    white-space: normal;
+    text-align: center;
+    line-height: 1.25;
+    border-radius: 16px;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .festive-garland {
+    height: 40px;
+    opacity: 0.8;
+  }
+
+  .festive-snow-mound {
+    height: 18px;
+    opacity: 0.4;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .festive-garland,
+  .festive-tree,
+  .festive-tree .ornament,
+  .festive-tree .star,
+  .festive-tree .light,
+  .festive-banner {
+    animation: none !important;
+  }
+
+  #festive-sky {
+    display: none;
+  }
+}
